@@ -2,43 +2,79 @@
   .content{
     width: 100%;
     height: 100px;
-    background-color: #45EB45;
+    background-color: 	#B0C4DE;
     display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+  }
+  .image{
+    width: 70px;
+    height: 70px;
+    background-color: 	#7DFDFE;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
   }
   .image img{
-    margin: 15px;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
+    margin: 6px;
   }
   .text{
     font-weight: bold;
     font-size: 23px;
     width: 15%;
     height: 100%;
-    margin-left: 1px;
+    margin-left: 5px;
     display: flex;
     align-items: center;
+    color: #FF3399;
   }
-  .product{
+  .wrapper{
     width: 40%;
     height: 100%;
     margin-left: 40px;
     display: flex;
     align-items: center;
  }
- .product a{
-  padding: 10px;
+ .wrapper a{
+  padding: 20px;
   font-size: 20px;
+  text-decoration: none;
  }
  .icon{
-    width: 40%;
-    height: 100%;
+  position: relative;
+  cursor: pointer;
  }
- .icon img{
-  width: 40px;
-  height: 40px;
-  background: none;
+ .icon span i{
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+ }
+ .icon p i{
+  font-size: 25px;
+  position: absolute;
+  left: 34px;
+  top: 40%;
+ }
+ .icon>input{
+  width: 15rem;
+  height: 27px;
+  padding: 2px;
+  background-color: azure;
+  border-radius: 10px;
+  position: absolute;
+  left: 75px;
+  top: 40%;
   appearance: none;
+  background: none;
+ }
+ .icon>nav{
+  font-size: 25px;
+  position: absolute;
+  left: 340px;
+  top: 39%;
  }
  .main{
   display: flex;
@@ -69,7 +105,9 @@
  .sub_main{
   width: 100%;
   height: 240px;
+  margin-top: 25px;
   display: flex;
+
  }
  .sub_a{
   width: 100%;
@@ -80,6 +118,12 @@
  .boxa{
   width: 23%;
   height: 100%;
+  border: 1px solid orange;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+
  }
  .boxa img{
   width: 100%;
@@ -98,12 +142,24 @@
   width: 23%;
   height: 100%;
   color: orange;
-  margin-left: 4%;
+  font-size: 17px;
+  padding-left: 5px;
+}
+.text1 button{
+  border-radius: 5px;
+  width: 35px;
+  padding: 3px;
+}
+.text1 button:hover{
+  background-color: 	#1E90FF;
+  color: white;
+  cursor: pointer;
 }
 .footer{
     width: 100%;
     height: 100px;
     background-color: #DEB887;
+    margin-top: 10px;
     display: flex;
   }
   .texts{
@@ -129,6 +185,7 @@
  .subscribe{
     width: 40%;
     height: 100%;
+    margin-right: -20px;
  }
  .subscribe p{
   float: left;
