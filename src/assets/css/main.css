@@ -11,15 +11,15 @@
   .image{
     width: 70px;
     height: 70px;
-    background-color: 	#7DFDFE;
+    background-color: 	cadetblue;
     border-radius: 50%;
     margin-left: 10px;
     margin-top: 15px;
   }
   .image img{
-    width: 80%;
-    height: 80%;
-    margin: 6px;
+    width: 70%;
+    height: 70%;
+    margin: 10px;
   }
   .text{
     font-weight: bold;
@@ -44,38 +44,121 @@
   text-decoration: none;
  }
  .icon{
-  position: relative;
+  margin-top: 30px;
+ }
+/* this is a recreation of twitter search in css */
+.icon .form {
+  --input-text-color: black;
+  --input-bg-color: #fff;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 300px;
+    height: 45px;
+  --inline-padding-of-input: 1rem;
+  --gap: 0.9rem;
   cursor: pointer;
- }
- .icon span i{
-  font-size: 25px;
+}
+/* form style */
+.icon .form {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
   position: absolute;
-  top: 40%;
- }
- .icon p i{
-  font-size: 25px;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,.close-btn {
   position: absolute;
-  left: 34px;
-  top: 40%;
- }
- .icon>input{
-  width: 15rem;
-  height: 27px;
-  padding: 2px;
-  background-color: azure;
-  border-radius: 10px;
-  position: absolute;
-  left: 75px;
-  top: 40%;
-  appearance: none;
+}
+/* styling search-icon */
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+/* svg -- size */
+svg {
+  width: 17px;
+  display: block;
+}
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
   background: none;
- }
- .icon>nav{
-  font-size: 25px;
-  position: absolute;
-  left: 340px;
-  top: 39%;
- }
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color)
+}
+/* input background change in focus */
+.input:focus ~ .fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+/* search icon color change in focus */
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+/* showing close button when typing */
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
  .main{
   display: flex;
   justify-content: center;
@@ -128,6 +211,7 @@
  .boxa img{
   width: 100%;
   height: 100%;
+  border-radius: 10px;
  }
 .text_a{
   width: 100%;
@@ -144,66 +228,81 @@
   color: orange;
   font-size: 17px;
   padding-left: 5px;
+  position: relative;
 }
 .text1 button{
   border-radius: 5px;
-  width: 35px;
+  border: 2px solid orange;
   padding: 3px;
+  width: 65px;
+  margin-left: 2px;
+  background-color: white;
+  color: orange;
+  position: absolute;
+  right: 17px;
+  bottom: 1px;
 }
 .text1 button:hover{
-  background-color: 	#1E90FF;
+  background-color: orange;
   color: white;
   cursor: pointer;
 }
-.footer{
-    width: 100%;
-    height: 100px;
-    background-color: #DEB887;
-    margin-top: 10px;
-    display: flex;
-  }
-  .texts{
-    font-weight: bold;
-    font-size: 23px;
-    width: 15%;
-    height: 100%;
-    margin-left: 5%;
-    display: flex;
-    align-items: center;
-  }
-  .catagory{
-    width: 40%;
-    height: 100%;
-    margin-left: 40px;
-    display: flex;
-    align-items: center;
- }
- .catagory a{
-  padding: 10px;
-  font-size: 20px;
- }
- .subscribe{
-    width: 40%;
-    height: 100%;
-    margin-right: -20px;
- }
- .subscribe p{
-  float: left;
-  margin-left: 45%;
- }
- .subscribe input{
+footer{
+  background-color: #FFFFF0;
+  width: 100%;
+  height:300px;
+  margin-top: 30px;
+  display: flex;
+}
+.footer_box{
+  width: 33.33%;
+  height: 40%;
+  margin-left: 50px;
+}
+.footer_box img{
+width: 12%;
+height: 12%;
+}
+.footer_box .images{
+margin-top: 10px;
+margin-left: 35px;
+}
+.images img{
+  border-radius: 50%;
+  background-color: cadetblue;
+  padding: 9px;
+}
+.footer_box a{
+  color: black;
+  text-decoration: none;
+}
+.footer_box h2{
+  color: black;
+}
+.payment{
+width: 250px;
+height: 50px;
+display: flex;
+justify-content: space-between;
+}
+.box2{
+width: 32%;
+height: 100%;
+}
+.box2 img{
+width: 100%;
+height: 100%;
+}
+.footer_box nav i{
+  font-size: 25px;
   padding: 5px;
-  float: left;
-  margin-left: 40%;
-  cursor: pointer;
- }
- .subscribe button{
+}
+.footer_box p{
+  display: flex;
+}
+.footer_box p img{
+  width: 40px;
   padding: 5px;
-  float: right;
-  margin-right: 19.1%;
-  background-color: red;
-  color: aliceblue;
-  cursor: pointer;
- }
+}
 
 
