@@ -1,9 +1,10 @@
 <template>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <div class="cart">
       <div class="left-cart">
-        <h3 style="color: blue;">Your Cart</h3>
+        <h3>Your Cart</h3>
         <hr style="width: 100%;">
-        <div class="main-cart"><br>
+        <div class="main-cart">
           <span style="margin-left: 5px; color: orange;">Item</span>
           <span style="margin-left: 50%; color: orange;">Quantities</span>
           <span style="margin-left: 21%; color: orange;">Price</span>
@@ -14,7 +15,7 @@
               <tr>
                 <td><img src="../assets/images/image1.jfif" alt=""></td>
                 <td>
-                  <div class="selection">
+                  <div id="selection">
                     <select name="quantity" id="quantity">
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -32,7 +33,7 @@
                 <td style="padding-left: 3%; color: orange;">$15.00</td>
               </tr>
               <tr>
-                <td style="padding: 3%; color: orange;">
+                <td style="padding: 3%; color: orange; padding-top: 10px;">
                   Nike Drunk High <br>
                   Size: Meduiam <br>
                   Gender: Man
@@ -44,11 +45,12 @@
               SubTotal $15.00
             </div>
             <hr style="width: 100%;">
+            <RouterLink to="/product"><div class="Back"><button>Cancle</button></div></RouterLink>
         </div>
       </div>
       <div class="right-cart">
         <div class="cart-box">
-          <b style="padding: 10px; font-size: 20px;">Sumuray(1item)</b>
+          <b style="padding:20px; font-size: 20px;">Sumuray(1item)</b>
           <br><br>
           <table>
             <tr>
@@ -71,8 +73,8 @@
               <td style="padding-left: 115%;">$16.50</td>
             </tr>
           </table>
-          <div class="button">
-            <button>Checkout</button>
+          <div id="button">
+            <RouterLink to="/Checkout"><button>Checkout</button></RouterLink>
           </div>
         </div>
       </div>
@@ -82,7 +84,7 @@
   .cart{
     width: 58%;
     height: 700px;
-    background-color: 	#FDF5E6;
+    background-color:	#5D6D7E;
     color: orange;
     display: flex;
     justify-content: center;
@@ -107,9 +109,11 @@
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
   }
-  .selection select{
-    width: 100px;
+  #selection select{
+    width: 200px;
     height: 33px;
+    border: none;
+    border-radius: 5px;
   }
   .right-cart{
     width: 40%;
@@ -124,12 +128,12 @@
     background-color: #fff;
     border-radius: 7px;
   }
-  .button button{
+  #button button{
     padding: 8px;
-    width: 60%;
+    width: 65%;
     border-radius: 6px;
-    margin-top: 10px;
-    margin-left: 6%;
+    margin-top: 14px;
+    margin-left: 15%;
     border: none;
     background-color: blue;
     color: white;
@@ -137,6 +141,17 @@
   }
   table tr td{
     padding-left: 5px;
+  }
+  .Back button{
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+    border: none;
+    cursor: pointer;
+  }
+  .ack button:hover{
+    background-color: 	#FF0000;
+    color: white;
   }
 </style>
   

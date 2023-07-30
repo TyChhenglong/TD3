@@ -7,11 +7,11 @@
       <div class="text"><p>SHOES SHOP</p></div>
       <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/"><i class="fas fa-home"></i> Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/product">Product</RouterLink>
-        <RouterLink to="/cart">Cart</RouterLink>
         <RouterLink to="/Checkout">Checkout</RouterLink>
+        <RouterLink to="/cart"><i class="fas fa-shopping-cart"></i> Cart</RouterLink>
       </nav>
     </div>
     <div class="icon">
@@ -34,6 +34,11 @@
         </label>
       </form>
     </div>
+    <div class="log">
+        <form action="">
+          <button>Login</button>
+        </form>
+    </div>
   </div>
     <div class="main">
       <div class="box"><img src="../assets/images/shop.png.jpg" alt=""></div>
@@ -50,22 +55,22 @@
       <div class="text1">
         <p>Model: Jordan</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: SOB</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
     </div>
     <div class="sub_main">
@@ -80,22 +85,22 @@
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: SOB</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
     </div>
     <div class="sub_main">
@@ -110,22 +115,22 @@
       <div class="text1">
         <p>Model: Jordan</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: SOB</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
     </div>
     <div class="sub_main">
@@ -140,22 +145,22 @@
       <div class="text1">
         <p>Model: Jordan</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: SOB</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
       <div class="text1">
         <p>Model: Nike</p>
         <span>Price: 10$</span>
-        <button style="margin-left: 70%;">Buy Now</button>
+        <RouterLink to="/product"><button style="margin-left: 200px;"><i class="fas fa-shopping-cart"></i> Buy</button></RouterLink>
       </div>
     </div>
     <footer>
@@ -163,14 +168,14 @@
           <div class="images"><img src="../assets/images/logo.png" alt=""></div>
                 <p style="margin-left: 8px; color: #FF3399; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
                 <span>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</span><br>
-                <a href="">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
+                <a href="" style="color: aliceblue;">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
                 <span>អាសយដ្ឋាន <br>
                     អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស
                     សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ
                 </span>
             </div>
             <div class="footer_box">
-                <h2>អំពីយើង</h2>
+                <h2 style="color: aliceblue;">អំពីយើង</h2>
                 <span>
                     SHOES SHOP យើងខ្ញុំគឺជាហាងដែលមានទុកចិត្តក្នុងការប្រើប្រាស់និង​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។ ព័ត៌មាន​បន្ថែម<br>
                     ផលិត​ផល​ សេវាកម្ម និង​ ​ធានាគុណភាព។
@@ -182,8 +187,8 @@
                   <div class="box2"><img src="../assets/images/wing.png" alt=""></div>
                 </div>
             </div>
-            <div class="footer_box" align="center">
-                <h2>ជួបគ្នានៅបណ្តាញសង្គម</h2>
+            <div class="footer_box" style="align-items: center;">
+                <h2 style="color: aliceblue;">ជួបគ្នានៅបណ្តាញសង្គម</h2>
                 <nav>
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-telegram"></i>

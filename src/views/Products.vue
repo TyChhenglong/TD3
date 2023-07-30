@@ -7,11 +7,11 @@
             <div class="texts">SHOES SHOP</div>
             <div class="wrapper">
               <nav>
-                <RouterLink to="/">Home</RouterLink>
+                <RouterLink to="/"><i class="fas fa-home"></i> Home</RouterLink>
                 <RouterLink to="/about">About</RouterLink>
                 <RouterLink to="/product">Product</RouterLink>
-                <RouterLink to="/cart">Cart</RouterLink>
                 <RouterLink to="/Checkout">Checkout</RouterLink>
+                <RouterLink to="/cart"><i class="fas fa-shopping-cart"></i> Cart</RouterLink>
               </nav>
             </div>
             <div class="icon" style="margin-top: 1px;">
@@ -33,6 +33,30 @@
                     </button>
                 </label>
               </form>
+            </div>
+            <div class="logins">
+                <form action="">
+                    <button>Login</button>
+                  <!-- <div class="page-login">  	
+                    <input type="checkbox" id="chk" aria-hidden="true">
+                    <div class="login">
+                      <form class="form">
+                        <label for="chk" aria-hidden="true">Log in</label>
+                        <input class="input" type="email" name="email" placeholder="Email" required="">
+                        <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                        <button>Log in</button>
+                      </form>
+                    </div>
+                    <div class="register">
+                      <form class="form"><label for="chk" aria-hidden="true">Register</label>					
+                        <input class="input" type="text" name="txt" placeholder="Username" required="">					
+                        <input class="input" type="email" name="email" placeholder="Email" required="">					
+                        <input class="input" type="password" name="pswd" placeholder="Password" required="">					
+                        <button>Register</button>				
+                      </form>
+                    </div>
+                  </div> -->
+                </form>
             </div>
         </div>
         <div class="mains">
@@ -87,7 +111,7 @@
                 </div>
                 <br><br>
                 <hr><br><br>
-                <div class="button1"><button>Add to Cart</button></div><br>
+                <RouterLink to="/cart"><div class="button1"><button>Add to Cart</button></div><br></RouterLink>
                 <hr><br>
                 <div class="detail">
                   <p>Air Jordan is a line of basketball 
@@ -98,38 +122,28 @@
               </div>
             </div>
           </div>
-          <br><hr style="width: 73%; margin-left: 9%;">
+          <br><hr style="width: 77.5%; margin-left: 9%;">
           <p style="margin-left: 9%; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">Related Products</p>
           <div class="sub-box3">
-            <div class="tail">
+            <div class="grid-container">
               <div class="tail1"><img src="../assets/images/image10.avif" alt=""></div>
               <div class="tail1"><img src="../assets/images/image12.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image14.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image16.webp" alt=""></div>
               <div class="tail1"><img src="../assets/images/image15.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image11.webp" alt=""></div>
+              <div class="tail1"><img src="../assets/images/image24.webp" alt=""></div>
               <div class="tail1"><img src="../assets/images/image13.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image10.avif" alt=""></div>
               <div class="tail1"><img src="../assets/images/image12.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image14.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image16.webp" alt=""></div>
               <div class="tail1"><img src="../assets/images/image15.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image11.webp" alt=""></div>
+              <div class="tail1"><img src="../assets/images/image24.webp" alt=""></div>
               <div class="tail1"><img src="../assets/images/image13.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image10.avif" alt=""></div>
               <div class="tail1"><img src="../assets/images/image12.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image14.jpg" alt=""></div>
               <div class="tail1"><img src="../assets/images/image16.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image15.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image11.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image13.jpg" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image10.avif" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image12.jpg" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image14.jpg" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image16.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image15.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image11.webp" alt=""></div>
-              <div class="tail1"><img src="../assets/images/image13.jpg" alt=""></div>
             </div>
           </div>
         </div>
@@ -139,14 +153,14 @@
           <div class="image"><img src="../assets/images/logo.png" alt=""></div>
                 <p style="margin-left: 8px; color: #FF3399; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
                 <span>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</span><br>
-                <a href="">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
+                <a href="" style="color: aliceblue;">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
                 <span>អាសយដ្ឋាន <br>
                     អគារ​លេខ ៣០៨ មហាវិថីព្រះមុន្នីវង្ស
                     សង្កាត់បឹងរាំង ខណ្ឌដូនពេញ
                 </span>
             </div>
             <div class="footer_box">
-                <h2>អំពីយើង</h2>
+                <h2 style="color: aliceblue;">អំពីយើង</h2>
                 <span>
                     SHOES SHOP យើងខ្ញុំគឺជាហាងដែលមានទុកចិត្តក្នុងការប្រើប្រាស់និង​ឈាន​មុខ​គេ​នៅ​កម្ពុជា។ ព័ត៌មាន​បន្ថែម<br>
                     ផលិត​ផល​ សេវាកម្ម និង​ ​ធានាគុណភាព។
@@ -158,8 +172,8 @@
                   <div class="box2"><img src="../assets/images/wing.png" alt=""></div>
                 </div>
             </div>
-            <div class="footer_box" align="center">
-                <h2>ជួបគ្នានៅបណ្តាញសង្គម</h2>
+            <div class="footer_box">
+                <h2 style="color: aliceblue;">ជួបគ្នានៅបណ្តាញសង្គម</h2>
                 <nav>
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-telegram"></i>
@@ -178,16 +192,15 @@
 
 <style>
   .Container{
-    width: 99%;
+    width: 100%;
     height: auto;
   }
   .contents{
     width: 100%;
     height: 100px;
-    background-color: #a3bde0;
+    background-color:#283747;
     display: flex;
-    position: sticky;
-    top: 0px;
+    
     z-index: 999;
     align-items: center
   }
@@ -226,9 +239,12 @@
     font-size: 20px;
     text-decoration: none;
   }
+  .icon .form{
+    margin-bottom: -1%;
+  }
 /* this is a recreation of twitter search in css */
 .icon.form {
-  --input-text-color: black;
+  --input-text-color: gray;
   --input-bg-color: #fff;
   --focus-input-bg-color: transparent;
   --text-color: #949faa;
@@ -339,11 +355,110 @@ input:-webkit-autofill:active {
   -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
   -webkit-transition-delay: 9999s;
 }
+.logins{
+  margin-left: 9%;
+}
+.logins form button{
+  width: 100px;
+  padding: 13px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  background-color: 	#E6E6FA;
+  cursor: pointer;
+}
+.logins form button:hover{
+  background-color:	orange;
+  color: #F8F8FF;
+}
+/* .page-login{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #240046;
+  max-height: 420px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px #24004628;
+  margin: 40% auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
+#chk {
+  display: none;
+}
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.login label {
+  margin: 25% 0 5%;
+}
+label {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  background: #e0dede;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.register {
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(5%);
+  transition: .8s ease-in-out;
+}
+.register label {
+  color: #573b8a;
+  transform: scale(.6);
+}
+#chk:checked ~ .register {
+  transform: translateY(-60%);
+}
+#chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+#chk:checked ~ .login label {
+  transform: scale(.6);
+  margin: 5% 0 5%;
+}   
+.form button {
+  width: 85%;
+  height: 40px;
+  margin: 12px auto 10%;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+.form button:hover {
+  background-color: #6d44b8;
+} */
   .mains{
     width: 100%;
     height: 900px;
     color: orange;
-    background-color: #B0C4DE;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
   }
@@ -376,30 +491,27 @@ input:-webkit-autofill:active {
   .goods{
     width: 70%;
     height: 98%;
-    background-color: 	#F5FFFA;
-    border: 1px solid orange;
     border-radius: 10px;
     display: flex;
+    background-color:#EBF4FA;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-     box-shadow: 0 10px 6px -6px #777;
 
   }
   .goods-a{
-    width: 80%;
-    height: 70%;
+    width: 90%;
+    height: 65%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .goods-a img{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
   }
   .goods-b{
     width: 100%;
     height: 30%;
-    background-color:		#B0C4DE;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -410,11 +522,13 @@ input:-webkit-autofill:active {
   .goods1{
     width: 23%;
     height: 90%;
-    border: 1px solid orange;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
   .goods1 img{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
   }
   .box-right{
     width: 40%;
@@ -425,9 +539,10 @@ input:-webkit-autofill:active {
     width: 350px;
     height: 100%;
     padding-left: 10%;
-    background-color: 	#FDF5E6;
-    border: 1px solid black;
+    background-color:#EBF4FA;
+    border: 1px solid #DADBDD;
     border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .box-right p span{
     margin-left: 29%;
@@ -491,35 +606,35 @@ input:-webkit-autofill:active {
   }
   .sub-box3{
     width: 100%;
-    height: 350px;
   }
-  .tail{
-    width: 90%;
-    height: 40%;
-    background-color: #F8F8FF;
-    margin-left: 9%;
-    overflow: auto;
-    width: 73.3%;
-    height: 45%;
-    display:inline-block;
-  }
-  .tail1{
-    width: 14%;
-    height: 75%;
-    margin-top: 7px;
-    background-color: 	#F8F8FF;
-    border: 1px solid orange;
-    display:inline-block;
-  }
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+
+  margin-left: 10px;
+}
+.grid-container > div {
+  width: 100%;
+  text-align: center;
+  border-radius: 7px;
+}
+.tail1{
+  width: 200px;
+  height: 200px;
+}
   .tail1 img{
     width: 100%;
-    height: 100%;
+    height: 85%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .footer{
-      background-color: #FFFFF0;
+      background-color: black;
       width: 100%;
-      height:300px;
+      height:350px;
       display: flex;
+      color: white;
+      margin-top: 30%;
   }
   .footer .footer_box{
       width: 33.33%;
