@@ -8,7 +8,7 @@
             <div class="wrapper">
               <nav>
                 <RouterLink to="/"><i class="fas fa-home"></i> Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
+                <RouterLink to="/">About</RouterLink>
                 <RouterLink to="/product">Product</RouterLink>
                 <RouterLink to="/Checkout">Checkout</RouterLink>
                 <RouterLink to="/cart"><i class="fas fa-shopping-cart"></i> Cart</RouterLink>
@@ -151,7 +151,7 @@
       <div class="footer">
           <div class="footer_box">
           <div class="image"><img src="../assets/images/logo.png" alt=""></div>
-                <p style="margin-left: 8px; color: #FF3399; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
+                <p style="margin-left: 8px; color:orange; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
                 <span>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</span><br>
                 <a href="" style="color: aliceblue;">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
                 <span>អាសយដ្ឋាន <br>
@@ -167,9 +167,9 @@
                 </span>
                 <h3>Payment</h3>
                 <div class="payment" style="color: orange;">
-                  <div class="box2"><img src="../assets/images/aba.png" alt=""></div>
-                  <div class="box2"><img src="../assets/images/acilida.jpg" alt=""></div>
-                  <div class="box2"><img src="../assets/images/wing.png" alt=""></div>
+                  <div class="boxs"><img src="../assets/images/aba.png" alt=""></div>
+                  <div class="boxs"><img src="../assets/images/acilida.jpg" alt=""></div>
+                  <div class="boxs"><img src="../assets/images/wing.png" alt=""></div>
                 </div>
             </div>
             <div class="footer_box">
@@ -225,7 +225,7 @@
       margin-left: 5px;
       display: flex;
       align-items: center;
-      color: #FF3399;
+      color: orange;
     }
     .wrapper{
       width: 40%;
@@ -512,7 +512,7 @@ label {
   .goods-b{
     width: 100%;
     height: 30%;
-    border-radius: 7px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -626,6 +626,7 @@ label {
   .tail1 img{
     width: 100%;
     height: 85%;
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .footer{
@@ -660,17 +661,17 @@ label {
   .footer.footer_box h2{
       color: black;
   }
-  .payment{
+  .footer_box .payment{
     width: 250px;
     height: 50px;
     display: flex;
     justify-content: space-between;
   }
-  .box2{
-    width: 32%;
+  .footer_box .payment .boxs{
+    width: 33%;
     height: 100%;
   }
-  .box2 img{
+  .boxs img{
     width: 100%;
     height: 100%;
   }

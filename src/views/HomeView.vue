@@ -166,7 +166,7 @@
     <footer>
         <div class="footer_box">
           <div class="images"><img src="../assets/images/logo.png" alt=""></div>
-                <p style="margin-left: 8px; color: #FF3399; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
+                <p style="margin-left: 8px; color:orange; font-weight: bold; font-size: 20px;">SHOSE SHOP</p>
                 <span>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ Sabay ឆ្នាំ​២០១៦</span><br>
                 <a href="" style="color: aliceblue;">គោលការណ៍​ភាព​ឯកជន | Privacy Policy</a><br>
                 <span>អាសយដ្ឋាន <br>

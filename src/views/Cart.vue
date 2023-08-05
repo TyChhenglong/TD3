@@ -66,7 +66,7 @@
               <td style="padding-left: 70%;">$0.50</td>
             </tr>
           </table>
-          <hr style="width: 87%; float: left;">
+          <hr style="width: 90%;" align="center">
           <table>
             <tr>
               <td>Total</td>
@@ -149,7 +149,7 @@
     border: none;
     cursor: pointer;
   }
-  .ack button:hover{
+  .Back button:hover{
     background-color: 	#FF0000;
     color: white;
   }

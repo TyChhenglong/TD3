@@ -69,7 +69,7 @@
       </div>
     </div>
   </div>
-  <div class="pay">
+  <div id="pay">
       <div class="left-site">
         <div class="message">
           <p>Cart > Customer Information > Shipping information > Payment Method</p><hr>
@@ -101,6 +101,74 @@
           <RouterLink to="/Checkout"><p>Return to Customer Information</p></RouterLink>
           <button>Complete Order</button>
         </div>
+      </div>
+      <div class="check-right">
+      <h3 style="padding-left: 10%;">Sumuray(item1)</h3>
+      <div class="check-ship">
+        <table>
+          <tr>
+            <td style="padding-left: 8px;">Subtotal</td>
+            <td style="padding-left: 65%;">$15.00</td>
+          </tr>
+          <tr>
+            <td style="padding-left: 8px;">Shiping</td>
+            <td style="padding-left: 65%;">$1</td>
+          </tr><tr>
+            <td style="padding-left: 8px;">Est Taxes</td>
+            <td style="padding-left: 65%;">$0.50</td>
+          </tr>
+        </table>
+        <hr style="width: 90%;">
+        <p style="padding-left: 11px;">Gift Card or Discount Code</p>
+        <div class="card">
+          <input type="text">
+          <button>Apply</button>
+        </div>
+        <hr style="width: 90%;">
+        <span style="padding-left: 10px;">Total</span>
+        <span style="padding-left: 54%; margin-top: 10%;">$16.50</span>
+      </div>
+    </div>
+  </div>
+  <div id="pay">
+      <div class="left-site">
+        <div id="success">
+          <div id="tick">
+            <img src="../assets/images/success-icon-10.png" alt="">
+          </div>
+          <div id="order">
+            <span style="color: rgb(159, 152, 152);">Order 112233</span><br>
+            <span style="font-size: 23px;">Thank you, Chhenglong!</span>
+          </div>
+          <hr style="width: 100%;">
+          <div class="get">
+            Your Order is Comfirm.<br>
+            We are accept yout order and We are getting it ready.
+          </div>
+          <hr style="width: 100%;">
+        </div>
+        <div class="customer">
+            <div class="c-left">
+              <h3>Your Customer Information</h3>
+              <span style="font-size: 18px; font-weight: bold;">Shipping Address</span><br><br>
+              <span>Chhenglong Ty</span><br>
+              <a href=""> #182, 132z, Tekloak1, Toulkork, Phnom Penh</a><br><br>
+              <span style="font-size: 18px; font-weight: bold;">Shipping Method</span><br><br>
+              <span>UAP Ground (Estimate Ship Time of 3-6 Days)</span>
+            </div>
+            <div class="c-right">
+              <div class="end">
+                <span style="font-size: 18px; font-weight: bold;">Billing Address</span><br><br>
+                <span>Chhenglong Ty</span><br>
+                <a href=""> #182, 132z, Tekloak1, Toulkork, Phnom Penh</a><br><br>
+                <span style="font-size: 18px; font-weight: bold;">Payment Method</span><br>
+                <div id="ABA">
+                  <img src="../assets/images/aba.png" alt=""><br>
+                </div>              
+                <span>Ending in 3217- $16.50</span>
+              </div>
+            </div>
+          </div>
       </div>
       <div class="check-right">
       <h3 style="padding-left: 10%;">Sumuray(item1)</h3>
@@ -237,7 +305,7 @@
   .card button:hover{
     background-color: rgb(13, 13, 240);
   }
-  .pay{
+  #pay{
     width: 55%;
     height: 700px;
     background-color:	#5D6D7E;
@@ -359,5 +427,53 @@
     background-color: 	#0000FF;
     cursor: pointer;
   }
-
+  #success #tick  img{
+    width: 65px;
+    height: 65px;
+    margin-top: 30px;
+    position: relative;
+  }
+  #order{
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+  }
+  .get{
+    color: rgb(159, 152, 152);
+    font-size: 16px;
+  }
+  .customer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+  }
+  .c-left{
+    width: 50%;
+    height: 100%;
+  }
+  .c-left span{
+    font-size: 16px;
+    color: rgb(159, 152, 152);
+  }
+  .c-right{
+    width: 50%;
+    height: 100%;
+    margin-top: 11.7%;
+  }
+  .c-left a{
+    color:#1c8fdb;
+  }
+  .c-right .end{
+    padding-left: 13%;
+  }
+  .c-right a{
+    color:#1c8fdb;
+  }
+  .end #ABA img{
+    width: 69px;
+    height: 40px;
+  }
+  .c-right span{
+    color: rgb(159, 152, 152);
+  }
 </style>
